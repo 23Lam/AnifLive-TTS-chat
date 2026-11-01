@@ -1,3 +1,5 @@
+> ⚠️ **注意**：本文件為上游專案 [AnifLive-TTS](https://github.com/Hiruynk/AnifLive-TTS) (Copyright 2026 Hiruynk) 的原始簡體中文說明文件，僅供參考。
+> 本專案（你的專案名稱）的實際安裝與使用方式，請回到 [主 README](README.md) 查看。
 <div align="center">
 
 <img src="assets/aniflive-tts-studio-demo.gif" alt="AnifLive-TTS Studio 操作演示" width="960">
@@ -12,7 +14,7 @@
 [![模型](https://img.shields.io/badge/%E6%A8%A1%E5%9E%8B-GPT--SoVITS_V2ProPlus-0f766e?style=flat-square)](https://github.com/RVC-Boss/GPT-SoVITS)
 [![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-PolyForm_Noncommercial_1.0.0-22c55e?style=flat-square)](LICENSING.md)
 
-[繁體中文](README_ZH_HK.md) · [English](README.md) · **简体中文**
+[繁體中文](README_ZH_HK_UPSTREAM.md) · [English](README_UPSTREAM.md) · **简体中文**
 
 </div>
 
