@@ -1,3 +1,5 @@
+# Modified from AnifLive-TTS (https://github.com/Hiruynk/AnifLive-TTS)
+# Copyright 2026 Hiruynk. Licensed under PolyForm Noncommercial 1.0.0.
 # reference: https://github.com/ORI-Muchim/MB-iSTFT-VITS-Korean/blob/main/text/korean.py
 
 import os

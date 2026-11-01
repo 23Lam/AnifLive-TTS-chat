@@ -1,3 +1,5 @@
+# Modified from AnifLive-TTS (https://github.com/Hiruynk/AnifLive-TTS)
+# Copyright 2026 Hiruynk. Licensed under PolyForm Noncommercial 1.0.0.
 """Fixed-reference, low-latency TensorRT streaming for AnifLive-TTS.
 
 The upstream ``api_server_trt.py`` demonstrates token streaming, but its

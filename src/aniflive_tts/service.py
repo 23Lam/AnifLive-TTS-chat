@@ -1,3 +1,5 @@
+# Modified from AnifLive-TTS (https://github.com/Hiruynk/AnifLive-TTS)
+# Copyright 2026 Hiruynk. Licensed under PolyForm Noncommercial 1.0.0.
 """TensorRT-only API implementation for one preloaded AnifLive-TTS model package.
 
 The file deliberately contains no checkpoint/ONNX fallback.  The container

@@ -1,3 +1,5 @@
+# Modified from AnifLive-TTS (https://github.com/Hiruynk/AnifLive-TTS)
+# Copyright 2026 Hiruynk. Licensed under PolyForm Noncommercial 1.0.0.
 # Modified by AnifLive-TTS in 2026.
 # Changes: restricted checkpoint loading and local-only export hardening.
 # See ANIFLIVE_TTS_PROVENANCE.json for the upstream revision and details.

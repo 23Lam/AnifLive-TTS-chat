@@ -1,3 +1,5 @@
+# Modified from AnifLive-TTS (https://github.com/Hiruynk/AnifLive-TTS)
+# Copyright 2026 Hiruynk. Licensed under PolyForm Noncommercial 1.0.0.
 from __future__ import annotations
 
 import datetime as dt
