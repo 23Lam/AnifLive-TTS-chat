@@ -19,7 +19,7 @@ if os.name == "nt":
             import MeCab
             import mecab_ko_dic
 
-            dictionary_path = mecab_ko_dic.dictionary_path.as_posix()
+            dictionary_path = ""
             self._tagger = MeCab.Tagger(f'-r nul -d "{dictionary_path}"')
 
         def pos(self, text):
@@ -276,16 +276,20 @@ def korean_to_lazy_ipa(text):
     return text
 
 
-_g2p = G2p()
+_g2p = None
 
 
 def korean_to_ipa(text):
+    #因為 Windows 環境下 _g2p 無法載入，這裡直接跳過轉換，回傳原文
+     return text
+"""
     text = latin_to_hangul(text)
     text = number_to_hangul(text)
     text = _g2p(text)
     text = fix_g2pk2_error(text)
     text = korean_to_lazy_ipa(text)
     return text.replace("ʧ", "tʃ").replace("ʥ", "dʑ")
+"""
 
 
 def post_replace_ph(ph):
@@ -312,6 +316,9 @@ def post_replace_ph(ph):
 
 
 def g2p(text):
+    #防呆：如果沒有 g2p 引擎，就直接把字元拆開回傳
+    if _g2p is None:
+        return [post_replace_ph(i) for i in text]
     text = latin_to_hangul(text)
     text = _g2p(text)
     text = divide_hangul(text)

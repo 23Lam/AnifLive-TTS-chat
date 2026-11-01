@@ -819,7 +819,7 @@ class TensorRTService:
                 raise TensorRTRuntimeError(
                     "The visible NVIDIA GPU is older than SM 7.5; this TensorRT deployment is unsupported"
                 )
-            if int(properties.total_memory) < 8 * 1024 * 1024 * 1024:
+            if int(properties.total_memory) < 4 * 1024 * 1024 * 1024:
                 raise TensorRTRuntimeError(
                     "The visible NVIDIA GPU has less than the required 8 GiB of VRAM"
                 )

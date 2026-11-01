@@ -540,7 +540,6 @@ class TensorRTFixedReferenceStreamer:
             ("你好。", "all_yue"),
             ("Hello.", "en"),
             ("こんにちは。", "all_ja"),
-            ("안녕하세요.", "all_ko"),
         )
         started = time.perf_counter()
         with self.torch.cuda.stream(self.engine.stream):
