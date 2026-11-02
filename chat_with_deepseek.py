@@ -79,7 +79,7 @@ def generate_tts(text, emotion, language):
     try:
         response = requests.post(TTS_API_URL, json=payload)
         if response.status_code == 200:
-            filename = f"{OUTPUT_FILE}temp_reply_{int(time.time())}.wav"
+            filename = os.path.join(OUTPUT_FILE, f"temp_reply_{int(time.time())}.wav")
             with open(filename, "wb") as f:
                 f.write(response.content)
             return filename
