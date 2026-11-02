@@ -41,7 +41,6 @@
 * `run_webui.bat`：Windows 一鍵啟動腳本。
 * `th_deepseek.py`：DeepSeek API 串接與情緒標籤處理。
 * `requirements.txt`：新增了 Streamlit 與 API 請求所需的依賴。
-* *（其他你新增的檔案，例如 `chat_UI_quick_start.bat` 等）*
 
 > 💡 **關於底層修改**：本專案對上游的顯存限制、TensorRT 轉換腳本及 Windows 依賴問題進行了修補。相關修改已散佈於 `service.py`、`converter.py`、`export_onnx.py`、`korean.py` 等檔案中，並皆已保留原版權聲明。
 
